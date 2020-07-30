@@ -57,3 +57,12 @@ button {
     box-shadow: honeydew;
     border: none;
 }
+
+.disable {
+    display: none;
+}
+
+.restore {
+    /* padding: 30px; */
+    margin-top: 30px;
+}
