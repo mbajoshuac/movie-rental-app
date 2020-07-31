@@ -9,23 +9,25 @@
     <title>Movie Rental App</title>
 </head>
 
-<body onload="movie.list_movies()">
-    <h1>Movie Avaliable for Renting</h1>
+<body>
+    <h1>Movies Avaliable for Renting</h1>
     <div class="search">
-        <input type="text" placeholder="Search for Movie"><span><button id="search-id">Search</button></span>
+        <label>Search for a Movie Here</label>
+        <input type="search" placeholder="Enter the Movie Name you want" id="search">
+        </span>
     </div>
     <div>
         <table id="movie-table">
             <tr>
-                <!-- <th>S/N</th> -->
                 <th>Title</th>
                 <th>Genre</th>
                 <th>Year of Release</th>
                 <th>Action</th>
             </tr>
-            <tr>
+            <tbody id="movie-body">
 
-            </tr>
+            </tbody>
+
         </table>
         <button class="restore" onclick="movie.restore_movie()"> Restore All Rented Movies</button>
     </div>
